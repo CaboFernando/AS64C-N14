@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  color: #333;
+}
+
+header {
+  background: #0077cc;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+section {
+  padding: 2rem;
+}
+
+h2 {
+  text-align: center;
+  color: #0077cc;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+  width: 250px;
+}
+
+.card img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  background: #0077cc;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.card a:hover {
+  background: #005fa3;
+}
+
+#contato .autores {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#contato a {
+  margin: 0 10px;
+  color: #0077cc;
+  text-decoration: none;
+}
+
+footer {
+  background: #e1e1e1;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
