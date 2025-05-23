@@ -22,6 +22,29 @@ h2 {
   color: #0077cc;
 }
 
+/* Estilo dos botões */
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content:center;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -70,7 +93,11 @@ h2 {
 
 footer {
   background: #e1e1e1;
-  text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
+  text-align: center;
+}
+
+footer p:first-child {
+  text-align: right; 
 }
