@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* Body com fonte moderna e fundo suave */
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f4f7fb;
@@ -34,7 +34,7 @@ header p {
   font-weight: 500;
 }
 
-/* Container dos cards */
+
 .atores-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -45,7 +45,7 @@ header p {
   margin: 0 auto;
 }
 
-/* Cada card */
+
 .atores-card {
   background-color: white;
   border-radius: 14px;
@@ -61,7 +61,7 @@ header p {
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
 }
 
-/* Fotos redondas */
+
 .atores-card img {
   width: 80px;
   height: 80px;
@@ -71,14 +71,14 @@ header p {
   border: 3px solid #3a86ff;
 }
 
-/* Nome do ator */
+
 .atores-card h3 {
   font-size: 1.25rem;
   color: #0b2545;
   margin-bottom: 1rem;
 }
 
-/* Link do LinkedIn */
+
 .atores-card a {
   display: inline-block;
   background-color: #0077b5;
@@ -99,7 +99,7 @@ header p {
   outline: none;
 }
 
-/* Footer */
+
 footer {
   text-align: center;
   padding: 1.5rem 1rem;
