@@ -1,13 +1,13 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f7f7f7;
-  color: #333;
+  background: #f4f0f8;
+  color: #2e2e2e;
 }
 
 header {
-  background: #0077cc;
+  background: #6a0dad;
   color: #fff;
   padding: 2rem;
   text-align: center;
@@ -19,65 +19,73 @@ section {
 
 h2 {
   text-align: center;
-  color: #0077cc;
+  color: #6a0dad;
 }
 
 /* Estilo dos botões */
 .buttons {
   display: flex;
   gap: 20px;
-  justify-content:center;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
 .btn {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #8a2be2;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 16px;
   text-align: center;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(138, 43, 226, 0.3);
 }
 
 .btn:hover {
-  background-color: #0056b3;
+  background-color: #5d1a9d;
+  transform: scale(1.05);
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .card {
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  padding: 1rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1.5rem;
   text-align: center;
-  width: 250px;
+  width: 260px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .card img {
-  width: 60px;
-  margin-bottom: 10px;
+  width: 70px;
+  margin-bottom: 15px;
 }
 
 .card a {
   display: inline-block;
-  margin-top: 10px;
-  background: #0077cc;
+  margin-top: 12px;
+  background: #6a0dad;
   color: white;
   padding: 8px 16px;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 6px;
+  transition: background 0.3s;
 }
 
 .card a:hover {
-  background: #005fa3;
+  background: #4b087d;
 }
 
 #contato .autores {
@@ -87,15 +95,21 @@ h2 {
 
 #contato a {
   margin: 0 10px;
-  color: #0077cc;
+  color: #8a2be2;
   text-decoration: none;
+  font-weight: 500;
+}
+
+#contato a:hover {
+  text-decoration: underline;
 }
 
 footer {
-  background: #e1e1e1;
+  background: #ddd6e0;
   padding: 1rem;
   font-size: 0.9rem;
   text-align: center;
+  color: #333;
 }
 
 footer p:first-child {
