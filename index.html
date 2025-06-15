@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Web Dev</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top"></a>
+          <img
+            class="img-fluid"
+            src="assets/img/logo.png"
+            alt="..."
+            style="width: 50%"
+        />
+        <span style="margin-left: 10px; font-weight: bold; color: #fff; font-size: 34px;">Web Dev</span>
+      </a>
+        <style>
+          .navbar-brand {
+            position: fixed;
+            left: 50%;
+          }
+        </style>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars ms-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Objetivos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Aulas</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#team">Time</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead">
+      <div class="container">
+        <div class="masthead-subheading">Bem-vindo ao Curso</div>
+        <div class="masthead-heading text-uppercase">Web Dev</div>
+        <a class="btn btn-primary btn-xl text-uppercase" href="#services"
+          >Começar</a
+        >
+        <p></p>
+        <a class="btn btn-secondary btn-xl text-uppercase" href="https://www.canva.com/design/DAGoH0NLDMs/n8BDt2iVA9HawUUfk_D7EA/edit?utm_content=DAGoH0NLDMs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank"
+          > Ebook do Usuário</a
+        >
+      </div>
+    </header>
+
+<section class="page-section" id="services">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-heading text-uppercase">Objetivos</h2>
+      <h3 class="section-subheading text-muted">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis ipsum provident magnam minus dicta, voluptatem cupiditate suscipit commodi 
+              deserunt vel numquam molestiae quia officia? Sunt ad exercitationem cum eaque incidunt.</h3>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="objective-card" onclick="toggleObjectiveDetails(0)">
+          <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa-solid fa-gear fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="my-3">Desenvolver raciocínio lógico</h4>
+          <p class="text-muted">
+            Capacitar alunos a pensar de forma estruturada para resolver problemas.
+          </p>
+          <div class="objective-details" id="objective-details-0">
+            <ul class="objective-list">
+              <li>Desenvolvimento de pensamento analítico</li>
+              <li>Resolução estruturada de problemas</li>
+              <li>Melhoria na capacidade de abstração</li>
+              <li>Prática com exercícios progressivos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="objective-card" onclick="toggleObjectiveDetails(1)">
+          <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa-solid fa-laptop-code fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="my-3">Compreender fundamentos da programação</h4>
+          <p class="text-muted">
+            Abordar conceitos básicos e avançados de algoritmos.
+          </p>
+          <div class="objective-details" id="objective-details-1">
+            <ul class="objective-list">
+              <li>Variáveis e tipos de dados</li>
+              <li>Estruturas de controle</li>
+              <li>Funções e modularização</li>
+              <li>Estruturas de dados básicas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="objective-card" onclick="toggleObjectiveDetails(2)">
+          <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa-solid fa-file-code fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="my-3">Aplicar conhecimentos na prática</h4>
+          <p class="text-muted">
+            Estimular a resolução de problemas reais usando algoritmos eficientes.
+          </p>
+          <div class="objective-details" id="objective-details-2">
+            <ul class="objective-list">
+              <li>Projetos práticos</li>
+              <li>Exercícios baseados em casos reais</li>
+              <li>Desenvolvimento de soluções completas</li>
+              <li>Implementação de algoritmos eficientes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="page-section bg-light" id="portfolio">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Aulas</h2>
+          <h3 class="section-subheading text-muted">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis ipsum provident magnam minus dicta, voluptatem cupiditate suscipit commodi 
+              deserunt vel numquam molestiae quia officia? Sunt ad exercitationem cum eaque incidunt.
+          </h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                data-bs-toggle="modal"
+                href="#portfolioModal1"
+              >
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  class="img-fluid-description"
+                  src="assets/img/portfolio/algoritmos.png"
+                  alt="..."
+                />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Introdução</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                data-bs-toggle="modal"
+                href="#portfolioModal2"
+              >
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  class="img-fluid-description"
+                  src="assets/img/portfolio/estrutura-decisao.png"
+                  alt="..."
+                />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">
+                  HTML
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                data-bs-toggle="modal"
+                href="#portfolioModal3"
+              >
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  class="img-fluid-description"
+                  src="assets/img/portfolio/estrutura-repeticao.png" 
+                  alt="..."
+                />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">
+                  CSS
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                data-bs-toggle="modal"
+                href="#portfolioModal4"
+              >
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  class="img-fluid-description"
+                  src="assets/img/portfolio/tecnicas.png"
+                  alt="..."
+                />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">
+                  Figma
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                data-bs-toggle="modal"
+                href="#portfolioModal5"
+              >
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  class="img-fluid-description"
+                  src="assets/img/portfolio/variaveis.png"
+                  alt="..."
+                />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">GitHub</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                data-bs-toggle="modal"
+                href="#portfolioModal6"
+              >
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  class="img-fluid-description"
+                  src="assets/img/portfolio/extra.png"
+                  alt="..."
+                />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Exercícios</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section bg-light" id="team">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Nosso time</h2>
+          <h3 class="section-subheading text-muted">
+            Se conecte conosco no Linkedin.
+          </h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="team-member">
+              <img
+                class="mx-auto rounded-circle"
+                src="assets/img/team/Lucas.png"
+                alt="..."
+              />
+              <h4>Lucas Genvigir</h4>
+              <p class="text-muted"></p>
+
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="https://www.linkedin.com/in/lucas-genvigir/"
+                target="_blank"
+                aria-label="Parveen Anand LinkedIn Profile"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="team-member">
+              <img
+                class="mx-auto rounded-circle"
+                src="assets/img/team/matheus.jpeg"
+                alt="..."
+              />
+              <h4>Matheus Meneguim</h4>
+              <p class="text-muted"></p>
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="https://www.linkedin.com/in/matheus-f-meneguim-949a5728a/"
+                target="_blank"
+                aria-label="Diana Petersen LinkedIn Profile"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="team-member">
+              <img
+                class="mx-auto rounded-circle"
+                src=""
+                alt="..."
+              />
+              <h4>André Souza</h4>
+              <p class="text-muted"></p>
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href=""
+                target="_blank"
+                aria-label="Diana Petersen LinkedIn Profile"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="team-member">
+              <img
+                class="mx-auto rounded-circle"
+                src=""
+                alt="..."
+              />
+              <h4>Carlos Fernando</h4>
+              <p class="text-muted"></p>
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href=""
+                target="_blank"
+                aria-label="Larry Parker LinkedIn Profile"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <p class="large text-muted">
+              Somos estudantes do quarto período de Análise e Desenvolvimento de
+              Sistemas da UTFPR-CP e este projeto é para a disciplina de Certificadora de Competência.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row align-items-center">
+            Copyright &copy; Web Dev 2025
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal1"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <h2 class="text-uppercase">Algoritmos</h2>
+                  <p class="item-intro text-muted">
+                    Constantes, variáveis, expressões aritméticas, relacionais e
+                    lógicas, comandos de entrada e saída e estrutura sequencial
+                  </p>
+
+                  <img
+                    class="img-fluid d-block mx-auto mb-5"
+                    src="assets/img/portfolio/algoritmos.png"
+                    alt="Algoritmos"
+                  />
+
+                  <div class="video-section">
+                    <h3 class="mb-4">Videoaulas</h3>
+                    
+                    <div class="video-item mb-4">
+                      <h4>Videoaula IDE - Online GDB</h4>
+                      <p>
+                        <strong>Descrição:</strong> Introdução à IDE Online GDB para programação na linguagem C.
+                      </p>
+                      <a href="https://youtu.be/GAV8ACiT6TU" target="_blank" class="btn btn-primary">Assistir Videoaula</a>
+                      <a href="https://www.onlinegdb.com/" target="_blank" class="btn btn-secondary">Acessar IDE Online GDB</a>
+                    </div>
+
+                    <div class="video-item mb-4">
+                      <h4>Videoaula 1: Algoritmos, Constantes e Variáveis</h4>
+                      <p>
+                        <strong>Descrição:</strong> Neste vídeo, você aprenderá os conceitos fundamentais de constantes e variáveis, essenciais para qualquer linguagem de programação. Vamos explorar como declarar e utilizar variáveis para armazenar diferentes tipos de dados e compreender o papel das constantes para valores imutáveis. Além disso, abordaremos boas práticas para nomeação e organização de variáveis no código.
+                      </p>
+                      <a href="https://youtu.be/XvtzrD_HSb8?si=zrqPXern86H774xt" target="_blank" class="btn btn-primary">Assistir Videoaula</a>
+                      <a href="assets/pdf/algoritmos/exercicios.pdf" target="_blank" class="btn btn-secondary">Ver Exercícios</a>
+                      <a href="assets/pdf/algoritmos/solucoes.pdf" target="_blank" class="btn btn-secondary">Ver Soluções</a>
+                    </div>
+
+                    <div class="video-item mb-4">
+                      <h4>Videoaula 2: Expressões Aritméticas, Relacionais e Lógicas</h4>
+                      <p>
+                        <strong>Descrição:</strong> Neste módulo, discutiremos como criar e utilizar expressões em programação. Vamos trabalhar com expressões aritméticas para cálculos matemáticos, explorar as expressões relacionais para comparar valores e aprender sobre expressões lógicas, que são fundamentais para construir tomadas de decisão no código. Exemplos práticos ajudarão a consolidar esses conceitos.
+
+
+                      </p>
+                      <a href="https://youtu.be/Lgsl7jWHqH4?si=jdct3xJOInlzQzR2" target="_blank" class="btn btn-primary">Assistir Videoaula</a>
+                      <a href="assets/pdf/expressoes/exercicios.pdf" target="_blank" class="btn btn-secondary">Ver Exercícios</a>
+                      <a href="assets/pdf/espressoes/solucoes.pdf" target="_blank" class="btn btn-secondary">Ver Soluções</a>
+                    </div>
+
+                    <div class="video-item mb-4">
+                      <h4>Videoaula 3: Comandos de Entrada e Saída e Estrutura Sequencial</h4>
+                      <p>
+                        <strong>Descrição:</strong> Entenda como interagir com o usuário através de comandos de entrada e saída de dados. Além disso, vamos explorar a estrutura sequencial, que é o alicerce para a construção de programas simples e lineares. Você verá como organizar e executar instruções de forma lógica e fluida no código.
+                      </p>
+                      <a href="https://youtu.be/vDR1sEfcIe0?si=c8j17ZX5ecavZ23Q" target="_blank" class="btn btn-primary">Assistir Videoaula</a>
+                      <a href="assets/pdf/comandos/exercicios.pdf" target="_blank" class="btn btn-secondary">Ver Exercícios</a>
+                      <a href="assets/pdf/comandos/solucoes.pdf" target="_blank" class="btn btn-secondary">Ver Soluções</a>
+                    </div>
+                  </div>
+
+                  <button
+                    class="btn btn-danger btn-xl text-uppercase"
+                    data-bs-dismiss="modal"
+                    type="button"
+                  >
+                    <i class="fas fa-xmark me-1"></i>
+                    Fechar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal2"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <h2 class="text-uppercase">Estrutura de Decisão</h2>
+                  <p class="item-intro text-muted">Simples e composta</p>
+                  <img
+                    class="img-fluid d-block mx-auto mb-5"
+                    src="assets/img/portfolio/estrutura-decisao.png"
+                    alt="Estrutura de Decisão"
+                  />
+                  <div class="video-section">
+                    <h3 class="mb-4">Videoaulas</h3>
+                    <div class="video-item mb-4">
+                      <h4>Videoaula 4: Estrutura de Decisão</h4>
+                      <p>
+                        <strong>Descrição:</strong> Este vídeo aborda as estruturas de decisão, como os comandos if, else e switch, que permitem criar programas mais inteligentes e dinâmicos. Com exemplos práticos, vamos mostrar como implementar essas estruturas para que seu programa reaja de maneiras diferentes, dependendo das condições impostas.
+                      </p>
+                      <a href="https://youtu.be/BeI6jhXlMjA?si=_6QfcOtzFYbHNE3J" target="_blank" class="btn btn-primary">Assistir Videoaula</a>
+                      <a href="assets/pdf/estrutura-decisao/exercicios.pdf" target="_blank" class="btn btn-secondary">Ver Exercícios</a>
+                      <a href="assets/pdf/estrutura-decisao/solucoes.pdf" target="_blank" class="btn btn-secondary">Ver Soluções</a>
+                    </div>
+                  </div>
+                  <button
+                    class="btn btn-danger btn-xl text-uppercase"
+                    data-bs-dismiss="modal"
+                    type="button"
+                  >
+                    <i class="fas fa-xmark me-1"></i>
+                    Fechar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal3"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <h2 class="text-uppercase">Estrutura de Repetição</h2>
+                  <p class="item-intro text-muted">Com contador e com condicional</p>
+                  <img
+                    class="img-fluid d-block mx-auto mb-5"
+                    src="assets/img/portfolio/estrutura-repeticao.png"
+                    alt="Estrutura de Repetição"
+                  />
+                  <div class="video-section">
+                    <h3 class="mb-4">Videoaulas</h3>
+                    <div class="video-item mb-4">
+                      <h4>Videoaula 5: Estrutura de Repetição</h4>
+                      <p>
+                        <strong>Descrição:</strong> Neste vídeo, você aprenderá a criar loops utilizando estruturas de repetição como for, while e do-while. Vamos explorar como elas podem tornar seu código mais eficiente e automatizar tarefas repetitivas. Exemplos práticos ajudarão você a compreender a sintaxe e a lógica dessas estruturas.
+                      </p>
+                      <a href="https://youtu.be/qHz7JVYPLXA?si=JedpjwDpdbPaWjwo" target="_blank" class="btn btn-primary">Assistir Videoaula</a>
+                      <a href="assets/pdf/estrutura-repeticao/exercicios.pdf" target="_blank" class="btn btn-secondary">Ver Exercícios</a>
+                      <a href="assets/pdf/estrutura-repeticao/solucoes.pdf" target="_blank" class="btn btn-secondary">Ver Soluções</a>
+                    </div>
+                  </div>
+                  <button
+                    class="btn btn-danger btn-xl text-uppercase"
+                    data-bs-dismiss="modal"
+                    type="button"
+                  >
+                    <i class="fas fa-xmark me-1"></i>
+                    Fechar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal4"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <h2 class="text-uppercase">Técnicas de Modularização</h2>
+                  <p class="item-intro text-muted">Procedimentos e funções</p>
+                  <img
+                    class="img-fluid d-block mx-auto mb-5"
+                    src="assets/img/portfolio/tecnicas.png"
+                    alt="Técnicas de Modularização"
+                  />
+                  <div class="video-section">
+                    <h3 class="mb-4">Videoaulas</h3>
+                    <div class="video-item mb-4">
+                      <h4>Videoaula 6: Funções e Procedimentos</h4>
+                      <p>
+                        <strong>Descrição:</strong> Neste vídeo, mergulharemos nos conceitos de procedimentos e funções. Você aprenderá como definir, implementar e utilizar esses elementos para estruturar seu código de maneira clara e eficiente. Explicaremos as diferenças entre procedimentos e funções, bem como seus papéis em diferentes cenários.
+                      </p>
+                      <a href="https://youtu.be/uRyVZyFKhmM?si=pNiZ9kipZR4greR0" target="_blank" class="btn btn-primary">Assistir Videoaula</a>
+                      <a href="assets/pdf/funcoes/exercicios.pdf" target="_blank" class="btn btn-secondary">Ver Exercícios</a>
+                      <a href="assets/pdf/funcoes/solucoes.pdf" target="_blank" class="btn btn-secondary">Ver Soluções</a>
+                    </div>
+                    <div class="video-item mb-4">
+                      <h4>Videoaula 7: Técnicas de Modularização</h4>
+                      <p>
+                        <strong>Descrição:</strong> A modularização é um dos pilares do desenvolvimento de software eficiente e bem organizado. Neste vídeo, vamos ensinar como dividir seu programa em módulos ou funções, facilitando a leitura, manutenção e reutilização do código. Abordaremos os benefícios dessa prática e como implementá-la na prática.
+                      </p>
+                      <a href="https://youtu.be/0PQqvejPM1o?si=ISqj2fcJQHRo-rBs" target="_blank" class="btn btn-primary">Assistir Videoaula</a>
+                      <a href="assets/pdf/tecnicas/exercicios.pdf" target="_blank" class="btn btn-secondary">Ver Exercícios</a>
+                    </div>
+                  </div>
+                  <button
+                    class="btn btn-danger btn-xl text-uppercase"
+                    data-bs-dismiss="modal"
+                    type="button"
+                  >
+                    <i class="fas fa-xmark me-1"></i>
+                    Fechar
+                  </button>
+                </div>
+              </div>
+            </div>
+                    </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal5"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <h2 class="text-uppercase">Variáveis Compostas</h2>
+                  <p class="item-intro text-muted">Variáveis Compostas Heterogêneas</p>
+                  <img
+                    class="img-fluid d-block mx-auto mb-5"
+                    src="assets/img/portfolio/variaveis.png"
+                    alt="Variáveis Compostas"
+                  />
+                  <div class="video-section">
+                    <h3 class="mb-4">Videoaulas</h3>
+                    <div class="video-item mb-4">
+                      <h4>Videoaula 8: Variáveis Compostas Heterogêneas</h4>
+                      <p>
+                        <strong>Descrição:</strong> Este módulo aborda variáveis compostas heterogêneas, como structs ou objetos, dependendo da linguagem utilizada. Você aprenderá como agrupar diferentes tipos de dados em uma única estrutura, tornando seu programa mais robusto e organizado. Exemplos práticos serão usados para demonstrar sua aplicação.
+                      </p>
+                      <a href="https://youtu.be/-EDLjH2g4j4?si=ENdbuCaL4XiTbuBF" target="_blank" class="btn btn-primary">Assistir Videoaula</a>
+                      <a href="assets/pdf/variaveis/exercicios.pdf" target="_blank" class="btn btn-secondary">Ver Exercícios</a>
+                      <a href="assets/pdf/variaveis/solucoes.pdf" target="_blank" class="btn btn-secondary">Ver Soluções</a>
+                    </div>
+                  </div>
+                  <button
+                    class="btn btn-danger btn-xl text-uppercase"
+                    data-bs-dismiss="modal"
+                    type="button"
+                  >
+                    <i class="fas fa-xmark me-1"></i>
+                    Fechar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal6"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <h2 class="text-uppercase">Extra</h2>
+                  <p class="item-intro text-muted">OnlineGDB e Git</p>
+                  <img
+                    class="img-fluid d-block mx-auto mb-5"
+                    src="assets/img/portfolio/extra.png"
+                    alt="Extra"
+                  />
+                  <div class="video-section">
+                    <h3 class="mb-4">Videoaulas</h3>
+                    <div class="video-item mb-4">
+                      <h4>Videoaula 9: VsCode e Git</h4>
+                      <p>
+                        <strong>Descrição:</strong> Neste vídeo extra, você será apresentado a duas ferramentas essenciais para o desenvolvimento moderno: o VS Code, um editor de código poderoso e versátil, e o Git, um sistema de controle de versão amplamente utilizado. Aprenda o básico de como configurar e usar essas ferramentas para aprimorar seu fluxo de trabalho como programador.
+                      </p>
+                      <p>
+                        <strong>Links e Downloads:</strong>
+                      </p>
+                      <a href="https://youtu.be/L7U_0ep5Uw8?si=orcGsiZ8MaJDDGkk" target="_blank" class="btn btn-primary">Assistir Videoaula</a>
+                      <a href="https://code.visualstudio.com/download" target="_blank" class="btn btn-secondary">Download VsCode</a>
+                      <a href="https://git-scm.com/downloads" target="_blank" class="btn btn-secondary">Download Git</a>
+                      <a href="https://github.com/" target="_blank" class="btn btn-secondary">GitHub</a>
+                    </div>
+                  </div>
+                  <button
+                    class="btn btn-danger btn-xl text-uppercase"
+                    data-bs-dismiss="modal"
+                    type="button"
+                  >
+                    <i class="fas fa-xmark me-1"></i>
+                    Fechar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/scripts.js"></script>
+
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+  </body>
+</html>
+
