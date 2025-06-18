@@ -3919,7 +3919,7 @@ fieldset:disabled .btn {
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
-  color: var(--bs-navbar-brand-hover-color);
+  color:#FF9933;
 }
 
 .navbar-nav {
@@ -3937,7 +3937,7 @@ fieldset:disabled .btn {
 }
 .navbar-nav .show > .nav-link,
 .navbar-nav .nav-link.active {
-  color: var(--bs-navbar-active-color);
+  color: #e6811d;
 }
 .navbar-nav .dropdown-menu {
   position: static;
@@ -11213,6 +11213,9 @@ p {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.125rem;
   font-weight: 700;
+  background-color: #FF9933;
+  border-color: #FF9933;
+  color: #fff;
 }
 
 .btn-social {
@@ -11261,7 +11264,7 @@ p {
 }
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #7ab317;
+  color: #fff;
 }
 
 @media (min-width: 992px) {
@@ -11283,14 +11286,16 @@ p {
   #mainNav.navbar-shrink {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #212529;
+    background-color: #FF9933;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
+    color: #212529;
   }
   #mainNav.navbar-shrink .navbar-brand svg,
   #mainNav.navbar-shrink .navbar-brand img {
     height: 1.5rem;
+    color: #212529;
   }
   #mainNav .navbar-nav .nav-item {
     margin-right: 1rem;
@@ -11362,7 +11367,7 @@ header.masthead .masthead-heading {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(122, 179, 23, 0.9);
+  background: rgba(255, 153, 51, 0.9);
   align-items: center;
   justify-content: center;
   opacity: 0;
@@ -11378,6 +11383,8 @@ header.masthead .masthead-heading {
 }
 #portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
   opacity: 1;
+  background: rgba(255, 153, 51, 0.9);
+  transition: opacity ease-in-out 0.25s;
 }
 #portfolio .portfolio-item .portfolio-caption {
   padding: 1.5rem;
@@ -11856,4 +11863,32 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: #666;
   max-width: 800px;
   margin: 0 auto 3rem;
+}
+
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active {
+  background-color: #e6811d;
+  border-color: #e6811d;
+  color: #fff;
+}
+
+/* Altera a cor do círculo de fundo dos ícones */
+.objective-card .fa-circle {
+  color: #FF9933 !important;
+}
+
+/* Altera a cor do ícone em cima do círculo */
+.objective-card .fa-inverse {
+  color: #ffffff !important;
+}
+
+.btn-primary {
+  background-color: #FF9933;
+  border-color: #FF9933;
+}
+
+.btn-primary:hover {
+  background-color: #e68629;
+  border-color: #e68629;
 }
