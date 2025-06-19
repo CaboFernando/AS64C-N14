@@ -11286,7 +11286,7 @@ p {
   #mainNav.navbar-shrink {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #FF9933;
+    background-color: blue;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
