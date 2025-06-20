@@ -1,835 +1,710 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Web Dev</title>
 
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Web Dev</title>
 
-    <script
-      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
-      crossorigin="anonymous"
-    ></script>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
-      rel="stylesheet"
-      type="text/css"
-    />
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 
-    <link href="css/styles.css" rel="stylesheet" />
-  </head>
-  <body id="page-top">
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand" href="#page-top"></a>
-          <img
-            class="img-fluid"
-            src="assets/img/logo.png"
-            alt="..."
-            style="width: 50%"
-        />
-        <span style="margin-left: 10px; font-weight: bold; color: #fff; font-size: 34px;">Web Dev</span>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#page-top"></a>
+      <img class="img-fluid" src="assets/img/logo.png" alt="..." style="width: 50%" />
+      <span style="margin-left: 10px; font-weight: bold; color: #fff; font-size: 34px;">Web Dev</span>
       </a>
-        <style>
-          .navbar-brand {
-            position: fixed;
-            left: 50%;
-          }
-        </style>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          Menu
-          <i class="fas fa-bars ms-1"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Objetivos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Aulas</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#team">Time</a></li>
-          </ul>
-        </div>
+      <style>
+        .navbar-brand {
+          position: fixed;
+          left: 50%;
+        }
+      </style>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars ms-1"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Objetivos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Aulas</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#team">Time</a></li>
+        </ul>
       </div>
-    </nav>
-
-    <header class="masthead">
-      <div class="container">
-        <div class="masthead-subheading">Bem-vindo ao Curso</div>
-        <div class="masthead-heading text-uppercase">Web Dev</div>
-        <a class="btn btn-primary btn-xl text-uppercase" href="#services"
-          >Começar</a
-        >
-        <p></p>
-        <a class="btn btn-secondary btn-xl text-uppercase" href="https://www.canva.com/design/DAGoH0NLDMs/n8BDt2iVA9HawUUfk_D7EA/edit?utm_content=DAGoH0NLDMs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank"
-          > Ebook do Usuário</a
-        >
-      </div>
-    </header>
-
-<section class="page-section" id="services">
-  <div class="container">
-    <div class="text-center">
-      <h2 class="section-heading text-uppercase">Objetivos</h2>
-      <h3 class="section-subheading text-muted">
-            Este curso foi pensado para quem está dando os primeiros passos no mundo do desenvolvimento web.
-            Nosso principal objetivo é apresentar os conceitos fundamentais de forma simples e prática, ajudando você a entender como funcionam as páginas da internet.
-            Aqui, você vai desenvolver o raciocínio lógico, aprender a escrever suas primeiras linhas de HTML e CSS, e conhecer ferramentas que fazem parte do dia a dia de quem cria sites.
-            Tudo isso com atividades que tornam o aprendizado mais leve e envolvente.</h3>
     </div>
-    <div class="row text-center">
-      <div class="col-md-4">
-        <div class="objective-card" onclick="toggleObjectiveDetails(0)">
-          <span class="fa-stack fa-2x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa-solid fa-gear fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="my-3">Entender o HTML</h4>
-          <p class="text-muted">
-            Aprender a estruturar páginas com as principais tags e boas práticas de marcação.
-          </p>
-          <div class="objective-details" id="objective-details-0">
-            <p>Nesta etapa, o aluno aprenderá o que é HTML, como utilizar as principais tags, entender a estrutura semântica de uma página e construir páginas simples com cabeçalhos, parágrafos, listas, links, imagens e tabelas. Também serão apresentadas boas práticas para manter o código organizado e acessível.</p>
+  </nav>
+
+  <header class="masthead">
+    <div class="container">
+      <div class="masthead-subheading">Bem-vindo ao Curso</div>
+      <div class="masthead-heading text-uppercase">Web Dev</div>
+      <a class="btn btn-primary btn-xl text-uppercase" href="#services">Começar</a>
+      <p></p>
+      <a class="btn btn-secondary btn-xl text-uppercase"
+        href="https://www.canva.com/design/DAGoH0NLDMs/n8BDt2iVA9HawUUfk_D7EA/edit?utm_content=DAGoH0NLDMs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+        target="_blank"> Ebook do Usuário</a>
+    </div>
+  </header>
+
+  <section class="page-section" id="services">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-heading text-uppercase">Objetivos</h2>
+        <h3 class="section-subheading text-muted">
+          Este curso foi pensado para quem está dando os primeiros passos no mundo do desenvolvimento web.
+          Nosso principal objetivo é apresentar os conceitos fundamentais de forma simples e prática, ajudando você a
+          entender como funcionam as páginas da internet.
+          Aqui, você vai desenvolver o raciocínio lógico, aprender a escrever suas primeiras linhas de HTML e CSS, e
+          conhecer ferramentas que fazem parte do dia a dia de quem cria sites.
+          Tudo isso com atividades que tornam o aprendizado mais leve e envolvente.</h3>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="objective-card" onclick="toggleObjectiveDetails(0)">
+            <span class="fa-stack fa-2x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa-solid fa-gear fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="my-3">Entender o HTML</h4>
+            <p class="text-muted">
+              Aprender a estruturar páginas com as principais tags e boas práticas de marcação.
+            </p>
+            <div class="objective-details" id="objective-details-0">
+              <p>Nesta etapa, o aluno aprenderá o que é HTML, como utilizar as principais tags, entender a estrutura
+                semântica de uma página e construir páginas simples com cabeçalhos, parágrafos, listas, links, imagens e
+                tabelas. Também serão apresentadas boas práticas para manter o código organizado e acessível.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="objective-card" onclick="toggleObjectiveDetails(1)">
+            <span class="fa-stack fa-2x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa-solid fa-laptop-code fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="my-3">Estilizar com CSS</h4>
+            <p class="text-muted">
+              Aplicar estilos visuais às páginas usando seletores, propriedades e layouts responsivos.
+            </p>
+            <div class="objective-details" id="objective-details-1">
+              <p>O módulo de CSS ensinará como transformar uma página simples em um layout atrativo. Os alunos vão
+                aprender sobre seletores, cores, fontes, espaçamentos, posicionamento, responsividade e a utilização de
+                classes. Também será introduzido o modelo de caixa (box model) e técnicas de media queries para
+                diferentes tamanhos de tela.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="objective-card" onclick="toggleObjectiveDetails(2)">
+            <span class="fa-stack fa-2x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa-solid fa-file-code fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="my-3">Visualizar e compartilhar</h4>
+            <p class="text-muted">
+              Interpretar projetos no Figma e publicar o código no GitHub para colaboração.
+            </p>
+            <div class="objective-details" id="objective-details-2">
+              <p>Nesta fase final, os alunos irão explorar como visualizar protótipos no Figma, extrair referências de
+                design e aplicar no HTML/CSS. Além disso, aprenderão a criar repositórios no GitHub, versionar seus
+                projetos, publicar com GitHub Pages e colaborar com outros desenvolvedores. A ideia é fechar o ciclo com
+                noções básicas de design e compartilhamento de código.</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="objective-card" onclick="toggleObjectiveDetails(1)">
-          <span class="fa-stack fa-2x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa-solid fa-laptop-code fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="my-3">Estilizar com CSS</h4>
-          <p class="text-muted">
-            Aplicar estilos visuais às páginas usando seletores, propriedades e layouts responsivos.
-          </p>
-          <div class="objective-details" id="objective-details-1">
-            <p>O módulo de CSS ensinará como transformar uma página simples em um layout atrativo. Os alunos vão aprender sobre seletores, cores, fontes, espaçamentos, posicionamento, responsividade e a utilização de classes. Também será introduzido o modelo de caixa (box model) e técnicas de media queries para diferentes tamanhos de tela.</p>
+    </div>
+  </section>
+
+  <section class="page-section bg-light" id="portfolio">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-heading text-uppercase">Aulas</h2>
+        <h3 class="section-subheading text-muted">
+          Nesta trilha, você vai explorar os principais fundamentos do desenvolvimento web de forma prática e acessível.
+          Cada aula foi pensada para apresentar os conceitos passo a passo, com exemplos visuais, linguagem simples e
+          atividades que te ajudam a fixar o conteúdo.
+          Começamos pela introdução à área, seguimos com HTML e CSS, e depois passamos por ferramentas essenciais como
+          Figma e GitHub.
+          Tudo isso para que você possa criar seus próprios projetos com autonomia e confiança.
+        </h3>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="portfolio-item">
+            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid-description" src="assets/img/IntroducaoWEBDEV.jpg"
+                alt="Imagem de Introdução Web e Dev" />
+            </a>
+            <div class="portfolio-caption">
+              <div class="portfolio-caption-heading">Introdução</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="portfolio-item">
+            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid-description" src="assets/img/html.jpeg" alt="..." />
+            </a>
+            <div class="portfolio-caption">
+              <div class="portfolio-caption-heading">
+                HTML
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="portfolio-item">
+            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid-description" src="assets/img/css.jpeg" alt="..." />
+            </a>
+            <div class="portfolio-caption">
+              <div class="portfolio-caption-heading">
+                CSS
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+          <div class="portfolio-item">
+            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid-description" src="assets/img/figma.jpeg" alt="..." />
+            </a>
+            <div class="portfolio-caption">
+              <div class="portfolio-caption-heading">
+                Figma
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+          <div class="portfolio-item">
+            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid-description" src="assets/img/github.jpeg" alt="..." />
+            </a>
+            <div class="portfolio-caption">
+              <div class="portfolio-caption-heading">GitHub</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="portfolio-item">
+            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid-description" src="assets/img/exerc.jpeg" alt="..." />
+            </a>
+            <div class="portfolio-caption">
+              <div class="portfolio-caption-heading">Exercícios</div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="objective-card" onclick="toggleObjectiveDetails(2)">
-          <span class="fa-stack fa-2x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa-solid fa-file-code fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="my-3">Visualizar e compartilhar</h4>
-          <p class="text-muted">
-            Interpretar projetos no Figma e publicar o código no GitHub para colaboração.
+    </div>
+  </section>
+
+  <section class="page-section bg-light" id="team">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-heading text-uppercase">Nosso time</h2>
+        <h3 class="section-subheading text-muted">
+          Se conecte conosco no Linkedin.
+        </h3>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="assets/img/team/Lucas.png" alt="..." />
+            <h4>Lucas Genvigir</h4>
+            <p class="text-muted"></p>
+
+            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/lucas-genvigir/" target="_blank"
+              aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="assets/img/team/matheus.jpeg" alt="..." />
+            <h4>Matheus Meneguim</h4>
+            <p class="text-muted"></p>
+            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/matheus-f-meneguim-949a5728a/"
+              target="_blank" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="assets/img/team/Andre.png" alt="..." />
+            <h4>André Souza</h4>
+            <p class="text-muted"></p>
+            <a class="btn btn-dark btn-social mx-2"
+              href="https://www.linkedin.com/in/andr%C3%A9-faria-de-souza-17b296332/" target="_blank"
+              aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="assets/img/team/Carlos.jpg" alt="..." />
+            <h4>Carlos Fernando</h4>
+            <p class="text-muted"></p>
+            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/carlos-fernando/" target="_blank"
+              aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <p class="large text-muted">
+            Somos estudantes do quarto período de Análise e Desenvolvimento de
+            Sistemas da UTFPR-CP e este projeto é para a disciplina de Certificadora de Competência.
           </p>
-          <div class="objective-details" id="objective-details-2">
-            <p>Nesta fase final, os alunos irão explorar como visualizar protótipos no Figma, extrair referências de design e aplicar no HTML/CSS. Além disso, aprenderão a criar repositórios no GitHub, versionar seus projetos, publicar com GitHub Pages e colaborar com outros desenvolvedores. A ideia é fechar o ciclo com noções básicas de design e compartilhamento de código.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        Copyright © Web Dev 2025
+      </div>
+    </div>
+  </footer>
+
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-bs-dismiss="modal">
+        </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="modal-body">
+                <h2 class="text-uppercase">Introdução</h2>
+                <p class="item-intro text-muted">
+                  Introdução ao curso Web Dev, primeira aula de apresentação
+                </p>
+
+                <img class="img-fluid d-block mx-auto mb-5" src="assets/img/IntroducaoWEBDEV.jpg" alt="Introdução" />
+
+                <div class="video-section">
+                  <h3 class="mb-4">Videoaula</h3>
+
+                  <div class="video-item mb-4">
+                    <h4>Aula 0: Introdução - COMECE AQUI!</h4>
+                    <p>
+                      <strong>Descrição:</strong> Introdução ao curso Web Dev.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=UkAAGpb4sFk" target="_blank"
+                      class="btn btn-primary">Assistir Videoaula</a>
+                  </div>
+                </div>
+
+                <button class="btn btn-danger btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                  <i class="fas fa-xmark me-1"></i>
+                  Fechar
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
 
-    <section class="page-section bg-light" id="portfolio">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="section-heading text-uppercase">Aulas</h2>
-          <h3 class="section-subheading text-muted">
-              Nesta trilha, você vai explorar os principais fundamentos do desenvolvimento web de forma prática e acessível.
-              Cada aula foi pensada para apresentar os conceitos passo a passo, com exemplos visuais, linguagem simples e atividades que te ajudam a fixar o conteúdo.
-              Começamos pela introdução à área, seguimos com HTML e CSS, e depois passamos por ferramentas essenciais como Figma e GitHub.
-              Tudo isso para que você possa criar seus próprios projetos com autonomia e confiança.
-          </h3>
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-bs-dismiss="modal">
+
         </div>
-        <div class="row">
-          <div class="col-lg-4 col-sm-6 mb-4">
-            <div class="portfolio-item">
-              <a
-                class="portfolio-link"
-                data-bs-toggle="modal"
-                href="#portfolioModal1"
-              >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="modal-body">
+                <h2 class="text-uppercase">HTML</h2>
+                <p class="item-intro text-muted">Módulo HTML</p>
+                <img class="img-fluid d-block mx-auto mb-5" src="assets/img/html.jpeg" alt="Estrutura de Decisão" />
+                <div class="video-section">
+                  <h3 class="mb-4">Videoaulas</h3>
+                  <div class="video-item mb-4">
+                    <h4>Videoaula 1: O que é HTML e como ele funciona</h4>
+                    <p>
+                      <strong>Descrição:</strong>
+                      Explicação simples sobre HTML, sua função na web e a estrutura básica de uma página.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=7snsyFDjpjI" target="_blank"
+                      class="btn btn-primary">Assistir Videoaula</a>
+                  </div>
+                  <div class="video-item mb-4">
+                    <h4>Videoaula 2: Criando seu primeiro arquivo HTML</h4>
+                    <p>
+                      <strong>Descrição:</strong> Configuração do VS Code, criação do arquivo index.html e estrutura
+                      mínima.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=bkI9fZ5H0Dc" target="_blank"
+                      class="btn btn-primary">Assistir Videoaula</a>
+                  </div>
+                  <div class="video-item mb-4">
+                    <h4>Videoaula 3: Títulos, parágrafos e imagens</h4>
+                    <p>
+                      <strong>Descrição:</strong> Como adicionar texto e imagens à página usando tags h1, p e img.
+                      Links e listas
+                      Criação de menus, navegação e listas ordenadas e não ordenadas com a, ul, ol e li.
+                      Formulários básicos
+                      Introdução aos formulários com form, input, textarea e button.
+                      Tags semânticas e estrutura da página
+                      Organização do conteúdo com header, main, section, footer, etc.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=vECI753FQoM" target="_blank"
+                      class="btn btn-primary">Assistir Videoaula</a>
+                  </div>
+                  <div class="video-item mb-4">
+                    <h4>Videoaula 4: Apresentação do Exercício</h4>
+                    <p>
+                      <strong>Descrição:</strong> Exercicio de Criação de um Portfólio simples combinando todos os
+                      conceitos aprendidos.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=y8yAdcYD2Os" target="_blank"
+                      class="btn btn-primary">Assistir Videoaula</a>
+                  </div>
+                  <div class="video-item mb-4">
+                    <h4>Videoaula 5: Resolução do Exercício</h4>
+                    <p>
+                      <strong>Descrição:</strong> Resolução do Exercicio de Criação de um Portfólio simples.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=YAXz40BwdOk" target="_blank"
+                      class="btn btn-primary">Assistir Videoaula</a>
                   </div>
                 </div>
-                <img
-                  class="img-fluid-description"
-                  src="assets/img/IntroducaoWEBDEV.jpg"
-                  alt="Imagem de Introdução Web e Dev"
-                />
-              </a>
-              <div class="portfolio-caption">
-                <div class="portfolio-caption-heading">Introdução</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mb-4">
-            <div class="portfolio-item">
-              <a
-                class="portfolio-link"
-                data-bs-toggle="modal"
-                href="#portfolioModal2"
-              >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img
-                  class="img-fluid-description"
-                  src="assets/img/html.jpeg"
-                  alt="..."
-                />
-              </a>
-              <div class="portfolio-caption">
-                <div class="portfolio-caption-heading">
-                  HTML
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mb-4">
-            <div class="portfolio-item">
-              <a
-                class="portfolio-link"
-                data-bs-toggle="modal"
-                href="#portfolioModal3"
-              >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img
-                  class="img-fluid-description"
-                  src="assets/img/css.jpeg" 
-                  alt="..."
-                />
-              </a>
-              <div class="portfolio-caption">
-                <div class="portfolio-caption-heading">
-                  CSS
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-            <div class="portfolio-item">
-              <a
-                class="portfolio-link"
-                data-bs-toggle="modal"
-                href="#portfolioModal4"
-              >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img
-                  class="img-fluid-description"
-                  src="assets/img/figma.jpeg"
-                  alt="..."
-                />
-              </a>
-              <div class="portfolio-caption">
-                <div class="portfolio-caption-heading">
-                  Figma
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-            <div class="portfolio-item">
-              <a
-                class="portfolio-link"
-                data-bs-toggle="modal"
-                href="#portfolioModal5"
-              >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img
-                  class="img-fluid-description"
-                  src="assets/img/github.jpeg"
-                  alt="..."
-                />
-              </a>
-              <div class="portfolio-caption">
-                <div class="portfolio-caption-heading">GitHub</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="portfolio-item">
-              <a
-                class="portfolio-link"
-                data-bs-toggle="modal"
-                href="#portfolioModal6"
-              >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img
-                  class="img-fluid-description"
-                  src="assets/img/exerc.jpeg"
-                  alt="..."
-                />
-              </a>
-              <div class="portfolio-caption">
-                <div class="portfolio-caption-heading">Exercícios</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="page-section bg-light" id="team">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="section-heading text-uppercase">Nosso time</h2>
-          <h3 class="section-subheading text-muted">
-            Se conecte conosco no Linkedin.
-          </h3>
-        </div>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="team-member">
-              <img
-                class="mx-auto rounded-circle"
-                src="assets/img/team/Lucas.png"
-                alt="..."
-              />
-              <h4>Lucas Genvigir</h4>
-              <p class="text-muted"></p>
-
-              <a
-                class="btn btn-dark btn-social mx-2"
-                href="https://www.linkedin.com/in/lucas-genvigir/"
-                target="_blank"
-                aria-label="Parveen Anand LinkedIn Profile"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="team-member">
-              <img
-                class="mx-auto rounded-circle"
-                src="assets/img/team/matheus.jpeg"
-                alt="..."
-              />
-              <h4>Matheus Meneguim</h4>
-              <p class="text-muted"></p>
-              <a
-                class="btn btn-dark btn-social mx-2"
-                href="https://www.linkedin.com/in/matheus-f-meneguim-949a5728a/"
-                target="_blank"
-                aria-label="Diana Petersen LinkedIn Profile"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="team-member">
-              <img
-                class="mx-auto rounded-circle"
-                src="assets/img/team/Andre.png"
-                alt="..."
-              />
-              <h4>André Souza</h4>
-              <p class="text-muted"></p>
-              <a
-                class="btn btn-dark btn-social mx-2"
-                href="https://www.linkedin.com/in/andr%C3%A9-faria-de-souza-17b296332/"
-                target="_blank"
-                aria-label="Diana Petersen LinkedIn Profile"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="team-member">
-              <img
-                class="mx-auto rounded-circle"
-                src="assets/img/team/Carlos.jpg"
-                alt="..."
-              />
-              <h4>Carlos Fernando</h4>
-              <p class="text-muted"></p>
-              <a
-                class="btn btn-dark btn-social mx-2"
-                href="https://www.linkedin.com/in/carlos-fernando/"
-                target="_blank"
-                aria-label="Larry Parker LinkedIn Profile"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">
-              Somos estudantes do quarto período de Análise e Desenvolvimento de
-              Sistemas da UTFPR-CP e este projeto é para a disciplina de Certificadora de Competência.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer py-4">
-      <div class="container">
-        <div class="row align-items-center">
-            Copyright © Web Dev 2025
-        </div>
-      </div>
-    </footer>
-
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal1"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal">
-          </div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <div class="modal-body">
-                  <h2 class="text-uppercase">Introdução</h2>
-                  <p class="item-intro text-muted">
-                    Introdução ao curso Web Dev, primeira aula de apresentação
-                  </p>
-
-                  <img
-                    class="img-fluid d-block mx-auto mb-5"
-                    src="assets/img/IntroducaoWEBDEV.jpg"
-                    alt="Introdução"
-                  />
-
-                  <div class="video-section">
-                    <h3 class="mb-4">Videoaula</h3>
-                    
-                    <div class="video-item mb-4">
-                      <h4>Aula 0: Introdução - COMECE AQUI!</h4>
-                      <p>
-                        <strong>Descrição:</strong> Introdução ao curso Web Dev.
-                      </p>
-                      <a href="https://www.youtube.com/watch?v=UkAAGpb4sFk" target="_blank" class="btn btn-primary">Assistir Videoaula</a>
-                    </div>
-                  </div>
-
-                  <button
-                    class="btn btn-danger btn-xl text-uppercase"
-                    data-bs-dismiss="modal"
-                    type="button"
-                  >
-                    <i class="fas fa-xmark me-1"></i>
-                    Fechar
-                  </button>
-                </div>
+                <button class="btn btn-danger btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                  <i class="fas fa-xmark me-1"></i>
+                  Fechar
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-bs-dismiss="modal">
+        </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="modal-body">
+                <h2 class="text-uppercase">CSS</h2>
+                <p class="item-intro text-muted">Módulo de CSS</p>
+                <img class="img-fluid d-block mx-auto mb-5" src="assets/img/css.jpeg" alt="Estrutura de Repetição" />
+                <div class="video-section">
+                  <h3 class="mb-4">Videoaulas</h3>
+                  <div class="video-item mb-4">
+                    <h4>Videoaula: Aprendendo CSS</h4>
+                    <p>
+                      <strong>Descrição:</strong> Neste vídeo, você aprenderá a criar seletores, box model,
+                      posicionamento, fontes, cores, flexbox, transições e responsividade com media queries.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=93Bxf7h7Tlw" target="_blank"
+                      class="btn btn-primary">Assistir Videoaula</a>
+                  </div>
+                </div>
+                <button class="btn btn-danger btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                  <i class="fas fa-xmark me-1"></i>
+                  Fechar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-bs-dismiss="modal">
+        </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="modal-body">
+                <h2 class="text-uppercase">Figma</h2>
+                <p class="item-intro text-muted">Apresentação da ferramenta, primeiros passos e criação do primeiro
+                  projeto</p>
+                <img class="img-fluid d-block mx-auto mb-5" src="assets/img/figma.jpeg"
+                  alt="Técnicas de Modularização" />
+                <div class="video-section">
+                  <h3 class="mb-4">Videoaulas</h3>
+                  <div class="video-item mb-4">
+                    <h4>Videoaula 1: O que é o Figma? (Introdução e Interface)</h4>
+                    <p>
+                      <strong>Descrição:</strong> Apresentar o Figma e familiarizar o aluno com o ambiente da
+                      ferramenta.
+                    </p>
+                    <a href="https://youtu.be/16x1sjKPawM" target="_blank" class="btn btn-primary">Assistir
+                      Videoaula</a>
+                  </div>
+                  <div class="video-item mb-4">
+                    <h4>Videoaula 2: Criando um novo projeto e frames</h4>
+                    <p>
+                      <strong>Descrição:</strong> Ensinar a criar um novo arquivo e usar os frames (áreas de design).
+                    </p>
+                    <a href="https://youtu.be/3_bQot5a3M4" target="_blank" class="btn btn-primary">Assistir
+                      Videoaula</a>
+                  </div>
+                  <div class="video-item mb-4">
+                    <h4>Videoaula 3: Ferramentas básicas de design (formas, texto, cores) Pt. 1</h4>
+                    <p>
+                      <strong>Descrição:</strong> Ensinar as ferramentas básicas para montar a UI.
+                    </p>
+                    <a href="https://youtu.be/nu6OqvJIOc4" target="_blank" class="btn btn-primary">Assistir
+                      Videoaula</a>
+                  </div>
+                  <div class="video-item mb-4">
+                    <h4>Videoaula 4: Ferramentas básicas de design (formas, texto, cores) Pt. 2</h4>
+                    <p>
+                      <strong>Descrição:</strong> Ensinar as ferramentas básicas para montar a UI.
+                    </p>
+                    <a href="https://youtu.be/ucWS-foj8g4" target="_blank" class="btn btn-primary">Assistir
+                      Videoaula</a>
+                  </div>
+                  <div class="video-item mb-4">
+                    <h4>Videoaula 5: Protótipos e compartilhamento</h4>
+                    <p>
+                      <strong>Descrição:</strong> Ensinar a criar interações entre as telas e como compartilhar o
+                      projeto.
+                    </p>
+                    <a href="https://youtu.be/FZZotYnJK-M" target="_blank" class="btn btn-primary">Assistir
+                      Videoaula</a>
+                  </div>
+                </div>
+                <button class="btn btn-danger btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                  <i class="fas fa-xmark me-1"></i>
+                  Fechar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-bs-dismiss="modal">
+        </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="modal-body">
+                <h2 class="text-uppercase">GitHub</h2>
+                <p class="item-intro text-muted">Módulo GitHub: Introdução, Instalação e Fluxo de Utilização.</p>
+                <img class="img-fluid d-block mx-auto mb-5" src="assets/img/github.jpeg" alt="GitHub" />
+                <div class="video-section">
+                  <h3 class="mb-4">Videoaulas</h3>
+                  <div class="video-item mb-4">
+                    <h4>Videoaula 1: Introdução ao GitHub</h4>
+                    <p>
+                      <strong>Descrição:</strong> Neste vídeo, você terá uma introdução ao GitHub.
+                    </p>
+                    <a href="https://youtu.be/wofeD9aXadc" target="_blank" class="btn btn-primary">Assistir
+                      Videoaula</a>
+                  </div>
+                  <div class="video-item mb-4">
+                    <h4>Videoaula 2: Instalações e Criação de Conta no GitHub</h4>
+                    <p>
+                      <strong>Descrição:</strong> Aprenda a instalar as ferramentas necessárias e criar sua conta no
+                      GitHub.
+                    </p>
+                    <a href="https://youtu.be/A3M-CRd-FdY" target="_blank" class="btn btn-primary">Assistir
+                      Videoaula</a>
+                  </div>
+                  <div class="video-item mb-4">
+                    <h4>Videoaula 3: Fluxo de utilização do GitHub com as Ferramentas instaladas</h4>
+                    <p>
+                      <strong>Descrição:</strong> Descubra como usar o GitHub com as ferramentas instaladas para
+                      gerenciar seus projetos.
+                    </p>
+                    <a href="https://youtu.be/eTIiYhjyiiE" target="_blank" class="btn btn-primary">Assistir
+                      Videoaula</a>
+                  </div>
+                </div>
+                <button class="btn btn-danger btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                  <i class="fas fa-xmark me-1"></i>
+                  Fechar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-bs-dismiss="modal">
+        </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="modal-body">
+                <h2 class="text-uppercase">Extra</h2>
+                <p class="item-intro text-muted">Exercícios de Fixação</p>
+                <img class="img-fluid d-block mx-auto mb-5" src="assets/img/exerc.jpeg" alt="Extra" />
+                <div class="video-section">
+                  <h3 class="mb-4">Exercícios 1:</h3>
+                  <div class="video-item mb-4">
+                    <h4>HTML</h4>
+                    <p>
+                      <strong>Descrição:</strong> Nestes exercícios, você encontrará atividades práticas que reforçam os
+                      principais conceitos aprendidos em HTML. Os exercícios foram pensados para iniciantes e envolvem a
+                      criação de páginas básicas com títulos, parágrafos, imagens, listas e links. O objetivo é fixar o
+                      conteúdo por meio da prática, desenvolvendo autonomia na escrita de estruturas HTML simples.
+                    </p>
+                    <p>
+                      <strong>Links:</strong>
+                    </p>
+                    <a href="assets/img/exercicios/java.pdf" target="_blank" class="btn btn-secondary">Ver
+                      Exercícios</a>
+                    <a href="assets/img/resolução/java.pdf" target="_blank" class="btn btn-secondary">Resolução dos
+                      exercícios</a>
 
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal2"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal">
-            
-          </div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <div class="modal-body">
-                  <h2 class="text-uppercase">HTML</h2>
-                  <p class="item-intro text-muted">Módulo HTML</p>
-                  <img
-                    class="img-fluid d-block mx-auto mb-5"
-                    src="assets/img/html.jpeg"
-                    alt="Estrutura de Decisão"
-                  />
-                  <div class="video-section">
-                    <h3 class="mb-4">Videoaulas</h3>
-                    <div class="video-item mb-4">
-                      <h4>Videoaula 1: O que é HTML e como ele funciona</h4>
-                      <p>
-                        <strong>Descrição:</strong> 
-                        Explicação simples sobre HTML, sua função na web e a estrutura básica de uma página.
-                      </p>
-                      <a href="https://www.youtube.com/watch?v=7snsyFDjpjI" target="_blank" class="btn btn-primary">Assistir Videoaula</a>
-                    </div>
-                    <div class="video-item mb-4">
-                      <h4>Videoaula 2: Criando seu primeiro arquivo HTML</h4>
-                      <p>
-                        <strong>Descrição:</strong> Configuração do VS Code, criação do arquivo index.html e estrutura mínima.
-                      </p>
-                      <a href="https://www.youtube.com/watch?v=bkI9fZ5H0Dc" target="_blank" class="btn btn-primary">Assistir Videoaula</a>
-                    </div>
-                    <div class="video-item mb-4">
-                      <h4>Videoaula 3: Títulos, parágrafos e imagens</h4>
-                      <p>
-                        <strong>Descrição:</strong> Como adicionar texto e imagens à página usando tags h1, p e img.
-                          Links e listas
-                          Criação de menus, navegação e listas ordenadas e não ordenadas com a, ul, ol e li.
-                          Formulários básicos
-                          Introdução aos formulários com form, input, textarea e button.
-                          Tags semânticas e estrutura da página
-                          Organização do conteúdo com header, main, section, footer, etc.
-                      </p>
-                      <a href="https://www.youtube.com/watch?v=vECI753FQoM" target="_blank" class="btn btn-primary">Assistir Videoaula</a>
-                    </div>
-                    <div class="video-item mb-4">
-                      <h4>Videoaula 4: Apresentação do Exercício</h4>
-                      <p>
-                        <strong>Descrição:</strong> Exercicio de Criação de um Portfólio simples combinando todos os conceitos aprendidos.
-                      </p>
-                      <a href="https://www.youtube.com/watch?v=y8yAdcYD2Os" target="_blank" class="btn btn-primary">Assistir Videoaula</a>
-                    </div>
-                    <div class="video-item mb-4">
-                      <h4>Videoaula 5: Resolução do Exercício</h4>
-                      <p>
-                        <strong>Descrição:</strong> Resolução do Exercicio de Criação de um Portfólio simples.
-                      </p>
-                      <a href="https://www.youtube.com/watch?v=YAXz40BwdOk" target="_blank" class="btn btn-primary">Assistir Videoaula</a>
-                    </div>
                   </div>
-                  <button
-                    class="btn btn-danger btn-xl text-uppercase"
-                    data-bs-dismiss="modal"
-                    type="button"
-                  >
-                    <i class="fas fa-xmark me-1"></i>
-                    Fechar
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal3"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal">
-          </div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <div class="modal-body">
-                  <h2 class="text-uppercase">CSS</h2>
-                  <p class="item-intro text-muted">Módulo de CSS</p>
-                  <img
-                    class="img-fluid d-block mx-auto mb-5"
-                    src="assets/img/css.jpeg"
-                    alt="Estrutura de Repetição"
-                  />
-                  <div class="video-section">
-                    <h3 class="mb-4">Videoaulas</h3>
-                    <div class="video-item mb-4">
-                      <h4>Videoaula: Aprendendo CSS</h4>
-                      <p>
-                        <strong>Descrição:</strong> Neste vídeo, você aprenderá a criar seletores, box model, posicionamento, fontes, cores, flexbox, transições e responsividade com media queries.
-                      </p>
-                      <a href="https://www.youtube.com/watch?v=93Bxf7h7Tlw" target="_blank" class="btn btn-primary">Assistir Videoaula</a>
-                    </div>
-                  </div>
-                  <button
-                    class="btn btn-danger btn-xl text-uppercase"
-                    data-bs-dismiss="modal"
-                    type="button"
-                  >
-                    <i class="fas fa-xmark me-1"></i>
-                    Fechar
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal4"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal">
-          </div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <div class="modal-body">
-                  <h2 class="text-uppercase">Figma</h2>
-                  <p class="item-intro text-muted">Apresentação da ferramenta, primeiros passos e criação do primeiro projeto</p>
-                  <img
-                    class="img-fluid d-block mx-auto mb-5"
-                    src="assets/img/figma.jpeg"
-                    alt="Técnicas de Modularização"
-                  />
-                  <div class="video-section">
-                    <h3 class="mb-4">Videoaulas</h3>
-                    <div class="video-item mb-4">
-                      <h4>Videoaula 1: O que é o Figma? (Introdução e Interface)</h4>
-                      <p>
-                        <strong>Descrição:</strong> Apresentar o Figma e familiarizar o aluno com o ambiente da ferramenta.
-                      </p>
-                      <a href="https://youtu.be/16x1sjKPawM" target="_blank" class="btn btn-primary">Assistir Videoaula</a>
-                    </div>
-                    <div class="video-item mb-4">
-                      <h4>Videoaula 2: Criando um novo projeto e frames</h4>
-                      <p>
-                        <strong>Descrição:</strong> Ensinar a criar um novo arquivo e usar os frames (áreas de design).
-                      </p>
-                      <a href="https://youtu.be/3_bQot5a3M4" target="_blank" class="btn btn-primary">Assistir Videoaula</a>
-                    </div>
-                    <div class="video-item mb-4">
-                      <h4>Videoaula 3: Ferramentas básicas de design (formas, texto, cores) Pt. 1</h4>
-                      <p>
-                        <strong>Descrição:</strong> Ensinar as ferramentas básicas para montar a UI.
-                      </p>
-                      <a href="https://youtu.be/nu6OqvJIOc4" target="_blank" class="btn btn-primary">Assistir Videoaula</a>
-                    </div>      
-                    <div class="video-item mb-4">
-                      <h4>Videoaula 4: Ferramentas básicas de design (formas, texto, cores) Pt. 2</h4>
-                      <p>
-                        <strong>Descrição:</strong> Ensinar as ferramentas básicas para montar a UI.
-                      </p>
-                      <a href="https://youtu.be/ucWS-foj8g4" target="_blank" class="btn btn-primary">Assistir Videoaula</a>
-                    </div>         
-                    <div class="video-item mb-4">
-                      <h4>Videoaula 5: Protótipos e compartilhamento</h4>
-                      <p>
-                        <strong>Descrição:</strong> Ensinar a criar interações entre as telas e como compartilhar o projeto.
-                      </p>
-                      <a href="https://youtu.be/FZZotYnJK-M" target="_blank" class="btn btn-primary">Assistir Videoaula</a>
-                    </div>                             
-                  </div>
-                  <button
-                    class="btn btn-danger btn-xl text-uppercase"
-                    data-bs-dismiss="modal"
-                    type="button"
-                  >
-                    <i class="fas fa-xmark me-1"></i>
-                    Fechar
-                  </button>
-                </div>
-              </div>
-            </div>
-                    </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal5"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal">
-          </div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <div class="modal-body">
-                  <h2 class="text-uppercase">GitHub</h2>
-                  <p class="item-intro text-muted">Módulo GitHub: Introdução, Instalação e Fluxo de Utilização.</p>
-                  <img
-                    class="img-fluid d-block mx-auto mb-5"
-                    src="assets/img/github.jpeg"
-                    alt="GitHub"
-                  />
-                  <div class="video-section">
-                    <h3 class="mb-4">Videoaulas</h3>
-                    <div class="video-item mb-4">
-                      <h4>Videoaula 1: Introdução ao GitHub</h4>
-                      <p>
-                        <strong>Descrição:</strong> Neste vídeo, você terá uma introdução ao GitHub.
-                      </p>
-                      <a href="https://youtu.be/wofeD9aXadc" target="_blank" class="btn btn-primary">Assistir Videoaula</a>
-                    </div>
-                    <div class="video-item mb-4">
-                      <h4>Videoaula 2: Instalações e Criação de Conta no GitHub</h4>
-                      <p>
-                        <strong>Descrição:</strong> Aprenda a instalar as ferramentas necessárias e criar sua conta no GitHub.
-                      </p>
-                      <a href="https://youtu.be/A3M-CRd-FdY" target="_blank" class="btn btn-primary">Assistir Videoaula</a>
-                    </div>
-                    <div class="video-item mb-4">
-                      <h4>Videoaula 3: Fluxo de utilização do GitHub com as Ferramentas instaladas</h4>
-                      <p>
-                        <strong>Descrição:</strong> Descubra como usar o GitHub com as ferramentas instaladas para gerenciar seus projetos.
-                      </p>
-                      <a href="https://youtu.be/eTIiYhjyiiE" target="_blank" class="btn btn-primary">Assistir Videoaula</a>
-                    </div>
-                  </div>
-                  <button
-                    class="btn btn-danger btn-xl text-uppercase"
-                    data-bs-dismiss="modal"
-                    type="button"
-                  >
-                    <i class="fas fa-xmark me-1"></i>
-                    Fechar
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal6"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal">
-          </div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <div class="modal-body">
-                  <h2 class="text-uppercase">Extra</h2>
-                  <p class="item-intro text-muted">Exercícios de Fixação</p>
-                  <img
-                    class="img-fluid d-block mx-auto mb-5"
-                    src="assets/img/exerc.jpeg"
-                    alt="Extra"
-                  />
-                  <div class="video-section">
-                    <h3 class="mb-4">Exercícios 1:</h3>
-                    <div class="video-item mb-4">
-                      <h4>HTML</h4>
-                      <p>
-                        <strong>Descrição:</strong> Nestes exercícios, você encontrará atividades práticas que reforçam os principais conceitos aprendidos em HTML. Os exercícios foram pensados para iniciantes e envolvem a criação de páginas básicas com títulos, parágrafos, imagens, listas e links. O objetivo é fixar o conteúdo por meio da prática, desenvolvendo autonomia na escrita de estruturas HTML simples.
-                      </p>
-                      <p>
-                        <strong>Links:</strong>
-                      </p>
-                      <a href="assets/img/exercicios/java.pdf" target="_blank" class="btn btn-secondary">Ver Exercícios</a>
-                      <a href="assets/img/resolução/java.pdf" target="_blank" class="btn btn-secondary">Resolução dos exercícios</a>
 
-                    </div>
-
-                    <div class="video-section">
+                  <div class="video-section">
                     <h3 class="mb-4">Exercícios 2:</h3>
                     <div class="video-item mb-4">
                       <h4>CSS</h4>
                       <p>
-                        <strong>Descrição:</strong> Nestes exercícios, você encontrará atividades práticas que reforçam os principais conceitos aprendidos em CSS. As propostas são voltadas para iniciantes e envolvem a aplicação de estilos em páginas HTML usando seletores, cores, fontes, tamanhos, margens, paddings e posicionamento de elementos. O objetivo é fixar o conteúdo por meio da prática, desenvolvendo autonomia na estilização de páginas e compreensão da relação entre HTML e CSS.
+                        <strong>Descrição:</strong> Nestes exercícios, você encontrará atividades práticas que reforçam
+                        os principais conceitos aprendidos em CSS. As propostas são voltadas para iniciantes e envolvem
+                        a aplicação de estilos em páginas HTML usando seletores, cores, fontes, tamanhos, margens,
+                        paddings e posicionamento de elementos. O objetivo é fixar o conteúdo por meio da prática,
+                        desenvolvendo autonomia na estilização de páginas e compreensão da relação entre HTML e CSS.
                       </p>
                       <p>
                         <strong>Links:</strong>
                       </p>
-                      <a href="assets/img/exercicios/java.pdf" target="_blank" class="btn btn-secondary">Ver Exercícios</a>
-                      <a href="assets/img/resolução/java.pdf" target="_blank" class="btn btn-secondary">Resolução dos exercícios</a>
+                      <a href="assets/img/exercicios/java.pdf" target="_blank" class="btn btn-secondary">Ver
+                        Exercícios</a>
+                      <a href="assets/img/resolução/java.pdf" target="_blank" class="btn btn-secondary">Resolução dos
+                        exercícios</a>
                     </div>
 
                     <div class="video-section">
-                    <h3 class="mb-4">Exercícios 3:</h3>
-                    <div class="video-item mb-4">
-                      <h4>Figma</h4>
-                      <p>
-                        <strong>Descrição:</strong> Neste vídeo extra, você será apresentado a duas ferramentas essenciais para o desenvolvimento moderno: o VS Code, um editor de código poderoso e versátil, e o Git, um sistema de controle de versão amplamente utilizado. Aprenda o básico de como configurar e usar essas ferramentas para aprimorar seu fluxo de trabalho como programador.
-                      </p>
-                      <p>
-                        <strong>Links:</strong>
-                      </p>
-                      <a href="assets/img/exercicios/java.pdf" target="_blank" class="btn btn-secondary">Ver Exercícios</a>
-                      <a href="assets/img/resolução/java.pdf" target="_blank" class="btn btn-secondary">Resolução dos exercícios</a>
-                    </div>
+                      <h3 class="mb-4">Exercícios 3:</h3>
+                      <div class="video-item mb-4">
+                        <h4>Figma</h4>
+                        <p>
+                          <strong>Descrição:</strong> Neste vídeo extra, você será apresentado a duas ferramentas
+                          essenciais para o desenvolvimento moderno: o VS Code, um editor de código poderoso e versátil,
+                          e o Git, um sistema de controle de versão amplamente utilizado. Aprenda o básico de como
+                          configurar e usar essas ferramentas para aprimorar seu fluxo de trabalho como programador.
+                        </p>
+                        <p>
+                          <strong>Links:</strong>
+                        </p>
+                        <a href="assets/img/exercicios/java.pdf" target="_blank" class="btn btn-secondary">Ver
+                          Exercícios</a>
+                        <a href="assets/img/resolução/java.pdf" target="_blank" class="btn btn-secondary">Resolução dos
+                          exercícios</a>
+                      </div>
 
-                    <div class="video-section">
-                    <h3 class="mb-4">Exercícios 4:</h3>
-                    <div class="video-item mb-4">
-                      <h4>GitHub</h4>
-                      <p>
-                        <strong>Descrição:</strong> Neste vídeo extra, você será apresentado a duas ferramentas essenciais para o desenvolvimento moderno: o VS Code, um editor de código poderoso e versátil, e o Git, um sistema de controle de versão amplamente utilizado. Aprenda o básico de como configurar e usar essas ferramentas para aprimorar seu fluxo de trabalho como programador.
-                      </p>
-                      <p>
-                        <strong>Links:</strong>
-                      </p>
-                      <a href="assets/img/exercicios/java.pdf" target="_blank" class="btn btn-secondary">Ver Exercícios</a>
-                      <a href="assets/img/resolução/java.pdf" target="_blank" class="btn btn-secondary">Resolução dos exercícios</a>
+                      <div class="video-section">
+                        <h3 class="mb-4">Exercícios 4:</h3>
+                        <div class="video-item mb-4">
+                          <h4>GitHub</h4>
+                          <p>
+                            <strong>Descrição:</strong> Lista de exercícios práticos de Git e GitHub com instruções
+                            passo a passo para:
+
+                            1° - Criação de repositórios locais e conexão com GitHub (GitHub Desktop e VS Code) |
+                            2° - Gerenciamento de branches (criação, publicação e exclusão) |
+                            3° - Processo completo de merge (mesclagem de branches na main) |
+                            4° - Simulação e resolução detalhada de conflitos de merge |
+                            5° - Verificação do histórico de commits e status final |
+                            6° - Operações de commit, push e sincronização |
+                            7° - Trabalho com arquivos README.md e manipulação de conteúdo |
+
+                            Inclui instruções paralelas para GitHub Desktop e Visual Studio Code em todos os exercícios.
+                          </p>
+                          <p>
+                            <strong>Links:</strong>
+                          </p>
+                          <a href="assets/img/exercicios/exercicios_github.pdf" target="_blank"
+                            class="btn btn-secondary">Ver Exercícios</a>
+                          <a href="assets/img/resolução/respostas_github.pdf" target="_blank" class="btn btn-secondary">Resolução
+                            dos
+                            exercícios</a>
+                        </div>
+                      </div>
+                      <button class="btn btn-danger btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                        <i class="fas fa-xmark me-1"></i>
+                        Fechar
+                      </button>
                     </div>
                   </div>
-                  <button
-                    class="btn btn-danger btn-xl text-uppercase"
-                    data-bs-dismiss="modal"
-                    type="button"
-                  >
-                    <i class="fas fa-xmark me-1"></i>
-                    Fechar
-                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="js/scripts.js"></script>
+      <script src="js/scripts.js"></script>
 
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-  </body>
+      <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
 </html>
